@@ -1,0 +1,46 @@
+html(lang="en")
+    head
+        include component/config
+        script
+    body
+        .body-app
+            .nav
+                img(src="img/icon.svg")
+                p Items
+                i.fas.fa-plus-circle
+            .nav-2t
+                p <span> 01 </span> ordenes simples
+                p <span> 01 </span>  Pararte
+
+            .ayuda
+                article
+                    h1(id="pregunta") Hace asi!
+                    
+                div.respuestassyn( id="respuestas" )
+                
+
+                div.pregunta 
+
+                button(onClick="printHTMLPreguntas(PreguntaActualIndex)") Siguiente
+                .porsentaje
+                    .progress
+
+                        .progress-bar.progress-bar-striped.progress-bar-animated(role="progressbar" id="progreso" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="<?--- ?>" )
+                        
+                    h3.rigth 0
+                    h2.gronw 0
+
+                    
+
+                .addorless
+                    a.btn.plus( type="button" href="paciente.html" ) PROGRAMAS
+                    a.btn.less( type="button" href="paciente.html" ) REPORTE
+
+               
+
+
+        .footer
+                img.img-fluid(src="img/logo.png")
+                p interfase de asignaturas nomencladas en intervenciones  
+        include component/js
+        script(src="js/actions.js")

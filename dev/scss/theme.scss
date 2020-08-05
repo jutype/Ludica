@@ -1,0 +1,348 @@
+/// colors
+$bg: #fefefd;
+$naranja: #ff914c;
+$azul: #38b6ff;
+$celeste: #d8f1ff;
+
+$rojo: #f15a24;
+$gris: #e9e9e9;
+$carbon: #071428;
+
+
+
+/// margin
+$mar-sec: 20px;
+$mar-div: 15px;
+$mar-tex: 5px;
+
+
+/// font
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap');
+
+
+body{
+ 
+    font-family: 'Lato', sans-serif;
+}
+
+.body-app{
+    
+
+    min-height: 100vh;
+ 
+}
+
+.nav{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin: $mar-div;
+
+    img{
+        margin: $mar-tex;
+        max-height: 5vh;
+    }
+    i{
+        font-size: 2em;
+        color: transparent;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $azul;
+    }
+    h1{
+        letter-spacing: 0.4em;
+        font-size: 2rem;
+        columns: $carbon;
+    }
+  
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.pregunta{
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.nav-2t{
+    margin: $mar-sec $mar-div;
+    display: flex;
+    span{
+        padding: $mar-tex;
+        background-color: $azul;
+        color: white;
+        
+        border-radius: 50px;
+        margin-right: $mar-tex;
+    }
+    p{
+        margin-right: $mar-div;
+    }
+}
+.input-tru{
+    display: none;
+}
+
+.mas{
+    background: green !important
+}
+.same{
+    background-color: blue !important;
+}
+/// loguin //
+
+.log{
+    height: 70vh;
+    display: flex; 
+    flex-direction: column;    
+    flex-wrap: nowrap;    
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    padding: $mar-div;
+    .input-ludica{
+        margin: $mar-tex 0;
+        background-color:  $celeste;
+        padding: $mar-div;
+        color: $carbon;
+    }
+   
+    .btn{
+        padding: $mar-div;
+        width: 100%;
+        border-radius: 8px;
+        color: white;
+        font-size: 1.4rem;
+       
+        margin: $mar-sec;
+        background-color: #a6a6a6;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+
+    }
+    .btn:hover, .btn:hover{
+        color: $gris;
+
+    }
+}
+
+.footer{
+    color: $gris;
+    text-align: center;
+    img{
+        max-width: 30vh;
+        margin-bottom: 2vh;
+    }
+}
+
+.input-ludica{
+    width: 100%;
+    border: 0 !important;
+    border-radius: 8px;
+    padding: $mar-div;
+    
+    box-shadow: 0px 0px 50px 0px gba(109, 143, 160, 1);
+    color: $gris;
+}
+
+/// loguin end ///
+
+
+//// nav bar ///
+
+
+/// nav bar final *///
+
+//// rectangulo star///@extend
+
+.pas-sec{
+    margin: $mar-sec 0;
+    padding: $mar-sec $mar-tex;
+    min-height: 60vh;
+    .active{
+        border: 0 !important;
+        background-color: $celeste;
+    }
+}
+
+.pacientes{
+    
+    line-height: 0.4;
+    border-bottom: $gris 0.5px solid;
+    padding: $mar-sec;
+    p{
+        color: $gris;
+    }
+}
+
+.tit-rectangulo{
+    padding-bottom: $mar-div;
+    border-bottom: 2px solid $gris;
+}
+
+.item-rectangulo{
+    padding: $mar-sec $mar-tex ;
+   
+    text-transform: capitalize;
+    color: $carbon !important;
+    span{
+        font-size: 0.8rem;
+        padding: $mar-div;
+        background-color: $rojo;
+        color: white;
+        margin: $mar-div $mar-sec  $mar-div 0;
+        border-radius: 50px;
+        font-weight: 900;
+    }
+}
+
+.ordenes-card{
+    padding: 0 $mar-div;
+    span{
+        background-color: $naranja;
+        padding: $mar-tex;
+        text-align: center;
+        font-weight: 900;
+        color: white;
+        border-radius: 50px;
+        margin-right: $mar-tex;
+    }
+    li{
+        margin: $mar-sec 0;
+        padding: $mar-tex 0;
+    }
+   ul{
+       
+    list-style-type: none;
+   }
+}
+
+    
+
+
+
+.item-lista{
+    text-decoration: none;
+    color: black !important;
+    width: 100%;
+
+}
+//// rectangulo final ///
+
+
+
+/// ayuda ///@extend
+
+.ayuda{
+    padding: $mar-sec;
+    article{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid $gris;
+        padding-bottom: $mar-div;
+    }
+    span{
+        padding: $mar-div;
+        
+        background-color: $rojo;
+        color: white;
+        border-radius: 8px;
+
+    }
+}
+
+/// ayuda /// 
+
+
+//// respuestas /// 
+
+.respuestas{
+    padding: 40px 0;
+    font-size: 3rem;
+    border-bottom: 2px solid $gris;
+    padding-bottom: $mar-div;
+    .fa-check{
+        color:#88a80d
+    }
+    .fa-life-ring{
+        color: $azul;
+    }
+    p{
+        font-size: 1rem;
+        margin-top: $mar-tex;
+    }
+}
+
+.porsentaje{
+    padding:  50px 0;
+}
+.addorless{
+    padding: $mar-div;
+    display: flex;
+    justify-content: space-between;
+    .btn{
+      
+        width: 40vw;
+        padding: $mar-div;
+        color: white;
+    }
+    .plus{
+        background-color: $rojo;
+    }
+    .less{
+        background-color: $carbon;
+    }
+}
+
+.respuestassyn{
+    display: flex;
+    justify-content: space-between;
+}
+.respuesta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    width: 45%;
+    padding: $mar-sec 0;
+    text-align: center;
+    input{
+        margin-bottom: $mar-div;
+    }
+    i{
+        font-size: 2rem;
+        
+    }
+    .fa-check{
+        color:#88a80d
+    }
+    .fa-life-ring{
+        color: $azul;
+    }
+}
+//// respuestas end //// 
+
+

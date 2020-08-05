@@ -1,0 +1,25 @@
+html(lang="en")
+    head
+        include component/config
+    body
+        .body-app
+            .nav
+                img(src="img/icon.svg")
+                p Items
+                i.fas.fa-plus-circle
+            .nav-2t
+                span 01
+               
+            section.pas-sec
+                .container-fuid.pacientes( onclick="location.href='ra.html'")  
+                    p.item-rectangulo <span> RA </span> 01 Sentarse
+                .container-fuid.pacientes( onclick="location.href='ra.html'")  
+                    p.item-rectangulo <span> MA </span> 02 Pararse
+                .container-fuid.pacientes( onclick="location.href='ra.html'")  
+                    p.item-rectangulo <span> M </span> 03 Acostarse
+                .container-fuid.pacientes( onclick="location.href='ra.html'")  
+                    p.item-rectangulo <span> M </span> 04 Bañarse
+
+        
+
+        include component/js
